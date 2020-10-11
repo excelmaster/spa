@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'empleados.empleados.EmpleadosConfig',
     'servicios.servicios.ServiciosConfig',
     'turnos.turnos.TurnosConfig'
-]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,8 +81,12 @@ WSGI_APPLICATION = 'peluqueria.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_api_rest',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 
