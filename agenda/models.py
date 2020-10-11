@@ -12,4 +12,4 @@ class Agenda(models.Model):
     idagenda=models.AutoField(primary_key=True)
     idturno=models.ForeignKey(Turnos,  on_delete=models.CASCADE)
     doccliente=models.ForeignKey(Clientes, on_delete=models.CASCADE)
-    descricion=models.CharField(_max_length=150,blank=False,null=False)
+    descricion=models.CharField(max_length=150,blank=False,null=False)
