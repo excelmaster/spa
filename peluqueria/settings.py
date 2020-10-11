@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'rest_framework',
     'agenda',
     'clientes',
@@ -44,6 +45,15 @@ INSTALLED_APPS = [
     'servicios',
     'turnos'
 ]
+=======
+    #rest framework
+    'rest_framework',
+    #entidades
+    'lientes.clientes.ClientesConfig',
+    'empleados.empleados.EmpleadosConfig',
+    'servicios.servicios.ServiciosConfig',
+    'turnos.turnos.TurnosConfig'
+>>>>>>> 371dde166e0b96041be6ca073f22945c43b0c51b
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
